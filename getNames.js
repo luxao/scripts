@@ -4,7 +4,7 @@ var names = [];
 cssClassesLuxao = `
 <style>
     #tribe-names-wrapper {
-        width: 300px;
+        width: auto;
         height: auto;
         background-color: #fff;
         color: #000;
