@@ -155,9 +155,9 @@ function toRadians(angle, half) {
 }
 
 function checkVideoTime(video_id) {
-    var video = e$(video_id)[0]
+    var video = $(video_id)[0]
     var duration = video.duration
-    e$(video_id).on('timeupdate', function() {
+    $(video_id).on('timeupdate', function() {
         var currentTime = video.currentTime;
         var threshold = 0.1; 
         if (currentTime > duration - threshold) {
@@ -506,60 +506,60 @@ function _createEl(el, id, cssClass, textFlag, text) {
 //         }
         
 //     }
-//   e$(document).ready(function (){
+//   $(document).ready(function (){
       
       
-//       e$('.ship').on('mousedown',function(e){
+//       $('.ship').on('mousedown',function(e){
 //           e.preventDefault();
 //           e.stopPropagation();
 //           mouse_down = true;
 //           start_x = e.pageX;
 //           start_y = e.pageY;
-//           e$("#glow").hide()
+//           $("#glow").hide()
 //       });
-//       e$('.ship').on('touchstart',function(e){
+//       $('.ship').on('touchstart',function(e){
 //           //e.preventDefault();
 //           //e.stopPropagation();
 //           mouse_down = true;
 //           start_x = e.originalEvent.touches[0].pageX;
 //           start_y = e.originalEvent.touches[0].pageY;
-//           e$("#glow").hide()
+//           $("#glow").hide()
 //       });
       
-//         e$('.ship').on('mousemove',function (e){
+//         $('.ship').on('mousemove',function (e){
 //             if (e.buttons>0)mouse_move = true;
 //             e.preventDefault();
 //             e.stopPropagation();
 //         });
-//         e$('.ship').on('mouseleave mouseup',function (e){
+//         $('.ship').on('mouseleave mouseup',function (e){
             
 //             end_x = e.pageX > 0 ? e.pageX : 1;
 //             end_y = e.pageY > 0 ? e.pageY : 1;
 //             swipe(true);
-//             e$("#glow").show()
+//             $("#glow").show()
 //         });
-//         e$('.ship').on('mouseleave',function (e){
+//         $('.ship').on('mouseleave',function (e){
 //           mouse_down = false;
-//           e$("#glow").show()
+//           $("#glow").show()
 //         });
         
-//         e$('.ship').on('touchend',function (e){
+//         $('.ship').on('touchend',function (e){
            
 //             end_x = e.originalEvent.changedTouches[0].pageX > 0 ? e.originalEvent.changedTouches[0].pageX : 1;
 //             end_y = e.originalEvent.changedTouches[0].pageY > 0 ? e.originalEvent.changedTouches[0].pageY : 1;
             
 //             swipe(true);
-//             e$("#glow").show()
+//             $("#glow").show()
 //             changing = false;
 //         });
         
-//         e$('.ship').on('touchmove',function (e){
+//         $('.ship').on('touchmove',function (e){
 //             mouse_move = true;
 //           if(Math.abs(start_y - e.originalEvent.changedTouches[0].pageY) <100){}
 //         });
         
         
-//       e$('.ship-services').on('mousedown',function(e){
+//       $('.ship-services').on('mousedown',function(e){
 //           e.preventDefault();
 //           e.stopPropagation();
 //           mouse_down = true;
@@ -567,7 +567,7 @@ function _createEl(el, id, cssClass, textFlag, text) {
 //           start_y = e.pageY;
           
 //       });
-//       e$('.ship-services').on('touchstart',function(e){
+//       $('.ship-services').on('touchstart',function(e){
 //           //e.preventDefault();
 //           //e.stopPropagation();
 //           mouse_down = true;
@@ -576,24 +576,24 @@ function _createEl(el, id, cssClass, textFlag, text) {
           
 //       });
       
-//         e$('.ship-services').on('mousemove',function (e){
+//         $('.ship-services').on('mousemove',function (e){
 //             if (e.buttons>0)mouse_move = true;
 //             e.preventDefault();
 //             e.stopPropagation();
 //         });
-//         e$('.ship-services').on('mouseleave mouseup',function (e){
+//         $('.ship-services').on('mouseleave mouseup',function (e){
             
 //             end_x = e.pageX > 0 ? e.pageX : 1;
 //             end_y = e.pageY > 0 ? e.pageY : 1;
 //             swipe(false);
             
 //         });
-//         e$('.ship').on('mouseleave',function (e){
+//         $('.ship').on('mouseleave',function (e){
 //           mouse_down = false;
           
 //         });
         
-//         e$('.ship-services').on('touchend',function (e){
+//         $('.ship-services').on('touchend',function (e){
            
 //             end_x = e.originalEvent.changedTouches[0].pageX > 0 ? e.originalEvent.changedTouches[0].pageX : 1;
 //             end_y = e.originalEvent.changedTouches[0].pageY > 0 ? e.originalEvent.changedTouches[0].pageY : 1;
@@ -602,7 +602,7 @@ function _createEl(el, id, cssClass, textFlag, text) {
             
 //             changing = false;
 //         });
-//         e$('.ship-services').on('touchmove',function (e){
+//         $('.ship-services').on('touchmove',function (e){
 //             mouse_move = true;
 //           if(Math.abs(start_y - e.originalEvent.changedTouches[0].pageY) <100){}
 //         });
