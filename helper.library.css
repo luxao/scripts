@@ -74,8 +74,6 @@ html {
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-._et_shake_move_anim {  animation: _et_move_shaking 0.2s 3;}
-
 @keyframes _shake_ {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   5% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -447,20 +445,57 @@ html {
     }
 }
 
+._hide_el_ {
+  display: none;
+}
+
+._show_el_ {
+  display: block;
+}
+._opacity_0_ {
+  opacity: 0;
+}
+
+._opacity_1_ {
+  opacity: 1;
+}
+
+._set_div_ {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+._scale_0_ {transform: scale(0);}
+._scale_1_ {transform: scale(1);}
+._scale_1_1_ {transform: scale(1.1);}
+._scale_1_2_ {transform: scale(1.2);}
+._scale_1_3_ {transform: scale(1.3);}
+._scale_1_4_ {transform: scale(1.4);}
+._scale_1_5_ {transform: scale(1.5);}
+
+
+._no_events_ {pointer-events: none;}
+
+
+
+
+
 /* EXAMPLE OF USING PATH AND MOTION */
-/* #motion-ship {
+/* element {
     position: absolute;
-    top: 170px;
-    left: 40px;
+    top: top;
+    left: left;
     transform-box: fill-box;
     transform-origin: 50% 50%;
     offset-anchor: 50% 50%;
     offset-rotate: 0deg;
     offset-path: path("M53 22.5L134.5 1L184.5 50.5L235.5 94L138 155.5L1.5 76L53 22.5Z");
     animation: move 12000ms infinite linear;
-    width: 80px;
-    height: 50px;
-    background-image: url(./lod.png);
+    width: width;
+    height: height;
+    background-image: url(./todo.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 24;

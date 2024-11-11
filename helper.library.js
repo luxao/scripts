@@ -191,7 +191,7 @@ function animText(index){
   });
 }
 
- function _send_postmessage_(el){
+ function _send_postmessage(el){
     try{
         window.postMessage(el,'*');    
     }catch(e){
@@ -219,7 +219,7 @@ function animText(index){
     }
 }
 
-function _createObserver_(_et_target, _et_flag, _et_handleIntersect) {
+function _createObserver(_et_target, _et_flag, _et_handleIntersect) {
     let _et_options = {
         root: null,
         rootMargin: "0px",
@@ -239,7 +239,7 @@ function _createObserver_(_et_target, _et_flag, _et_handleIntersect) {
     }
 }
 
-function _handleIntersect_(entries) {
+function _handleIntersect(entries) {
     entries.forEach((entry) => {
         //TODO:
     });
@@ -247,7 +247,7 @@ function _handleIntersect_(entries) {
 
 
 
-function _buildTresholdList_() {
+function _buildTresholdList() {
     let thresholds = [];
     let numSteps = 100;
 
@@ -284,6 +284,17 @@ function getCookie(cname) {
   }
   return "";
 }
+
+function _createEl(el, id, cssClass, textFlag, text) {
+    let div = document.createElement(el)
+    div.id = id
+    div.className = cssClass
+    if (textFlag) {
+        div.innerHTML  = text
+    }
+    return div
+}
+
 
 // EXAMPLE OF JQUERY AJAX
 // $.ajax({
