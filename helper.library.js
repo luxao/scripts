@@ -59,7 +59,7 @@ const getRandomColor = () => `#${Math.floor(Math.random() * 16777215).toString(1
 const toTitleCase = (str) => str.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase())
 
 // 13. Get current Date and Time
-const now = new Date().toLocaleString()
+const dateNow = new Date().toLocaleString()
 
 // 14. Check if a Number is Event or Odd
 const isEven = (num) => num % 2 === 0;
