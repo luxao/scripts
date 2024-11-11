@@ -155,9 +155,9 @@ function toRadians(angle, half) {
 }
 
 function checkVideoTime(video_id) {
-    var video = e$("#v-"+video_id)[0]
+    var video = e$(video_id)[0]
     var duration = video.duration
-    e$("#v-"+video_id).on('timeupdate', function() {
+    e$(video_id).on('timeupdate', function() {
         var currentTime = video.currentTime;
         var threshold = 0.1; 
         if (currentTime > duration - threshold) {
