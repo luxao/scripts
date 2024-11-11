@@ -67,9 +67,22 @@ html {
   color: #fff;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header .profile-img {
   width: 6.25rem;
   height: 6.25rem;
+}
+
+
+.header .line {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-image: url(./images/line.png);
+  position: absolute;
+  top: 90px;
+  left: 0px;
 }
