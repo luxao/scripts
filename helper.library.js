@@ -65,3 +65,38 @@ const shuffleArray = (arr) => arr.sort(() => Math.random() - 0.5);
 
 // 20. Merge Two Arrays
 const mergeArrays = (arr1, arr2) => [...arr1, ...arr2];
+
+// 21. Merge Two Objects
+function mergeObjects(obj1, obj2) {
+  return {...obj1, ...obj2};
+}
+
+// 22. Remove a specific item from an array
+function arrayRemove(arr, value) {
+  return arr.filter(item => item !== value);
+}
+
+// 23. Check if is an Array
+function isArray(value) {
+  return Array.isArray(value);
+}
+
+// 24. Check if is an Object
+function isObject(value) {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+// 25. Check if is a function
+function isFunction(value) {
+  return typeof value === 'function';
+}
+
+// 26. Check if is a null
+function isNull(value) {
+  return value === null;
+}
+
+// 27. Check if is an undefined
+function isUndefined(value) {
+  return typeof value === 'undefined';
+}
