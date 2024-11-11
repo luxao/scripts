@@ -1,3 +1,5 @@
+const log = console.log.bind(document)
+
 // 1. Deep Clone Object 
 const deepClone = (obj) => JSON.parse(JSON.stringify(obj));
 
@@ -100,3 +102,17 @@ function isNull(value) {
 function isUndefined(value) {
   return typeof value === 'undefined';
 }
+
+// 28. Check if is a num
+const isNum = (num) => {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+/** PERFORMANCE TIMER
+ * 
+ * const start = performance.now()
+ * SOME PROGRAM
+ * const end = performance.now()
+ * const total = start - end
+ * 
+ */
