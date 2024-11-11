@@ -1,0 +1,506 @@
+
+/* EXAMPLE OF USING FONT FACE IN BANNER  */
+/* @font-face {
+  font-family: UniSansRegular;
+  font-style: regular;
+  font-weight: 400;
+  src: url("https://sk.search.etargetnet.com/fonts/unisans/?UniSansRegular.woff");
+} */
+
+/* clearfix and settings */
+
+/* border-box */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* clearfix */
+
+.group:before,
+.group:after {
+  content: ' ';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #0d0d0d;
+  border-radius: 10px;
+}
+
+
+@keyframes _move_and_shake_ {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(3px, 3px) rotate(2deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-3px, 3px) rotate(-2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+._et_shake_move_anim {  animation: _et_move_shaking 0.2s 3;}
+
+@keyframes _shake_ {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  5% { transform: translate(-1px, -2px) rotate(-1deg); }
+  10% { transform: translate(-3px, 0px) rotate(1deg); }
+  15% { transform: translate(3px, 2px) rotate(0deg); }
+  20% { transform: translate(1px, -1px) rotate(1deg); }
+  25% { transform: translate(-1px, 2px) rotate(2deg); }
+  30% { transform: translate(-3px, 1px) rotate(0deg); }
+  35% { transform: translate(0px, 0px) rotate(-2deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+ @keyframes _shake_and_scale_ {
+  0% { transform:  scale(1.1) translate(1px, 1px) rotate(0deg); }
+  5% { transform: scale(1.1)  translate(-1px, -2px) rotate(-1deg); }
+  10% { transform: scale(1.1) translate(-3px, 0px) rotate(1deg); }
+  15% { transform:  scale(1.1) translate(3px, 2px) rotate(0deg); }
+  20% { transform: scale(1.1)  translate(1px, -1px) rotate(1deg); }
+  25% { transform:  scale(1.1) translate(-1px, 2px) rotate(2deg); }
+  30% { transform:  scale(1.1) translate(-3px, 1px) rotate(0deg); }
+  35% { transform:  scale(1.1) translate(0px, 0px) rotate(-2deg); }
+  100% { transform: scale(1.1) translate(0px, 0px) rotate(0deg); }
+}
+
+
+@keyframes _flash_ {
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+}
+
+
+@keyframes _zoom_in_ {
+  0% {transform: scale(1.000);}
+  1% {transform: scale(1.001);}
+  2% {transform: scale(1.002);}
+  3% {transform: scale(1.003);}
+  4% {transform: scale(1.004);}
+  5% {transform: scale(1.005);}
+  6% {transform: scale(1.006);}
+  7% {transform: scale(1.007);}
+  8% {transform: scale(1.008);}
+  9% {transform: scale(1.009);}
+  10% {transform: scale(1.010);}
+  11% {transform: scale(1.011);}
+  12% {transform: scale(1.012);}
+  13% {transform: scale(1.013);}
+  14% {transform: scale(1.014);}
+  15% {transform: scale(1.015);}
+  16% {transform: scale(1.016);}
+  17% {transform: scale(1.017);}
+  18% {transform: scale(1.018);}
+  19% {transform: scale(1.019);}
+  20% {transform: scale(1.020);}
+  21% {transform: scale(1.021);}
+  22% {transform: scale(1.022);}
+  23% {transform: scale(1.023);}
+  24% {transform: scale(1.024);}
+  25% {transform: scale(1.025);}
+  26% {transform: scale(1.026);}
+  27% {transform: scale(1.027);}
+  28% {transform: scale(1.028);}
+  29% {transform: scale(1.029);}
+  30% {transform: scale(1.030);}
+  31% {transform: scale(1.031);}
+  32% {transform: scale(1.032);}
+  33% {transform: scale(1.033);}
+  34% {transform: scale(1.034);}
+  35% {transform: scale(1.035);}
+  36% {transform: scale(1.036);}
+  37% {transform: scale(1.037);}
+  38% {transform: scale(1.038);}
+  39% {transform: scale(1.039);}
+  40% {transform: scale(1.040);}
+  41% {transform: scale(1.041);}
+  42% {transform: scale(1.042);}
+  43% {transform: scale(1.043);}
+  44% {transform: scale(1.044);}
+  45% {transform: scale(1.045);}
+  46% {transform: scale(1.046);}
+  47% {transform: scale(1.047);}
+  48% {transform: scale(1.048);}
+  49% {transform: scale(1.049);}
+  50% {transform: scale(1.050);}
+  51% {transform: scale(1.051);}
+  52% {transform: scale(1.052);}
+  53% {transform: scale(1.053);}
+  54% {transform: scale(1.054);}
+  55% {transform: scale(1.055);}
+  56% {transform: scale(1.056);}
+  57% {transform: scale(1.057);}
+  58% {transform: scale(1.058);}
+  59% {transform: scale(1.059);}
+  60% {transform: scale(1.060);}
+  61% {transform: scale(1.061);}
+  62% {transform: scale(1.062);}
+  63% {transform: scale(1.063);}
+  64% {transform: scale(1.064);}
+  65% {transform: scale(1.065);}
+  66% {transform: scale(1.066);}
+  67% {transform: scale(1.067);}
+  68% {transform: scale(1.068);}
+  69% {transform: scale(1.069);}
+  70% {transform: scale(1.070);}
+  71% {transform: scale(1.071);}
+  72% {transform: scale(1.072);}
+  73% {transform: scale(1.073);}
+  74% {transform: scale(1.074);}
+  75% {transform: scale(1.075);}
+  76% {transform: scale(1.076);}
+  77% {transform: scale(1.077);}
+  78% {transform: scale(1.078);}
+  79% {transform: scale(1.079);}
+  80% {transform: scale(1.080);}
+  81% {transform: scale(1.081);}
+  82% {transform: scale(1.082);}
+  83% {transform: scale(1.083);}
+  84% {transform: scale(1.084);}
+  85% {transform: scale(1.085);}
+  86% {transform: scale(1.086);}
+  87% {transform: scale(1.087);}
+  88% {transform: scale(1.088);}
+  89% {transform: scale(1.089);}
+  90% {transform: scale(1.090);}
+  91% {transform: scale(1.091);}
+  92% {transform: scale(1.092);}
+  93% {transform: scale(1.093);}
+  94% {transform: scale(1.094);}
+  95% {transform: scale(1.095);}
+  96% {transform: scale(1.096);}
+  97% {transform: scale(1.097);}
+  98% {transform: scale(1.098);}
+  99% {transform: scale(1.099);}
+  100% {transform: scale(1.1);}
+}
+
+
+@keyframes _shakeX_ {
+    0%{
+        transform: translateX(-7px);
+    }
+    40%{
+        transform: translateX(0px);
+    }
+    80%{
+        transform: translateX(7px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes _shakeY_ {
+    0%{
+        transform: translateY(-7px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(7px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes _floatY3_ {from{transform: translateY(-3px);}to{transform: translateY(3px);}}
+@keyframes _floatY5_ {from{transform: translateY(-5px);} to{transform: translateY(5px);}}
+@keyframes _floatY8_ {from{transform: translateY(-8px);} to{transform: translateY(8px);}}
+@keyframes _floatY10_ {from{transform: translateY(-10px);} to{transform: translateY(10px);}}
+
+@keyframes _rotate180_ {
+    0% {
+        transform: rotateY(180deg);
+    }
+    30% {
+        transform: rotateY(0deg)
+    }
+    60% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0deg)
+    }
+}
+@keyframes _rotate_to_360_ { 
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes _rotate_to_360_back_ {
+    to{
+        transform: rotateZ(-360deg);
+    }
+}
+
+
+
+/* SET THIS FOR ELEMENT ! transform-origin: top; */
+@keyframes _swinging_ {
+    0% {transform: rotate(0deg);}
+    30%{transform: rotate(10deg);}
+    60%{transform: rotate(-10deg);}
+    90%{transform: rotate(10deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+
+
+@keyframes _fade_in_ {  
+   from {  
+       opacity:0;  
+   }  
+   to {  
+       opacity:1;  
+   }  
+}
+
+
+@keyframes _fade_out_ {  
+   from {  
+       opacity:1;  
+   }  
+
+   to {  
+       opacity:0;  
+   }  
+}
+
+
+
+@keyframes _fade_from_left_ {from{left:-300px;opacity:0} to{left:0px;opacity:1}}
+@keyframes _fade_from_right_ {from{left:300px;opacity:0} to{left:0px;opacity:1}}
+
+@keyframes _from_left_ {from{left:-300px;} to{left:0px;}}
+@keyframes _from_right_ {from{left:300px;} to{left:0px;}}
+
+@keyframes _fade_in_fade_out_ {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+
+@keyframes _fade_ {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+._loading_ {
+    width: 45px;
+    height: 45px;
+    cursor: auto;
+    top: 188px;
+    left: 120px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 900;
+}
+
+._loading_::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  inset:-5px;
+  border-radius: 50%;
+  border:5px solid #7556a0;
+  animation: prixClipFix .4s 1 linear;
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+
+
+
+@keyframes _background_blur_ {
+    from{
+        filter: blur(0px);
+    }
+    to{
+        filter: blur(10px);
+    }
+}
+
+
+/* Easy Pulse  */
+@keyframes _easy_pulse_ {
+    0% {
+		transform: scale(1);
+	}
+	
+	40% {
+	    transform: scale(1.1);
+	}
+
+	80% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+@keyframes _from_bottom_ {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes _to_bottom_ {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+/* EXAMPLE OF USING PATH AND MOTION */
+/* #motion-ship {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    offset-anchor: 50% 50%;
+    offset-rotate: 0deg;
+    offset-path: path("M53 22.5L134.5 1L184.5 50.5L235.5 94L138 155.5L1.5 76L53 22.5Z");
+    animation: move 12000ms infinite linear;
+    width: 80px;
+    height: 50px;
+    background-image: url(./lod.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 24;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+    offset-rotate: 0deg;
+  }
+  14% {
+    offset-distance: 14%;
+    offset-rotate: 68deg;
+  }
+  38% {
+    offset-distance: 38%;
+    offset-rotate: 68deg;
+  }
+  39% {
+    offset-distance: 39%;
+    offset-rotate: 1deg;
+  }
+  58% {
+    offset-distance: 58%;
+    offset-rotate: 1deg;
+  }
+  59% {
+    offset-distance: 59%;
+    offset-rotate: 52deg;
+  }
+  86% {
+    offset-distance: 86%;
+    offset-rotate: 52deg;
+  }
+  87% {
+    offset-distance: 87%;
+    offset-rotate: -16deg;
+  }
+  100% {
+    offset-distance: 100%;
+    offset-rotate: -16deg;
+  }
+} */
