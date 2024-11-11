@@ -83,6 +83,6 @@ html {
   background-position: center;
   background-image: url(./images/line.png);
   position: absolute;
-  top: 90px;
-  left: 0px;
+  /* top: 90px;
+  left: 0px; */
 }
