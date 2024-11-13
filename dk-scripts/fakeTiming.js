@@ -277,13 +277,15 @@ else {
 
     
     function attack() {
-        $("#troop_confirm_submit").click();
+        // $("#troop_confirm_submit").click();
+        console.log("ATTACK")
+        
+        sessionStorage.removeItem("shouldAttack");
     }
 
     if (sessionStorage.getItem("shouldAttack") === "true") {
         console.log("LOAD UNITS NOW")
-        // attack();
-
-        // sessionStorage.removeItem("shouldAttack");
+        attack();
+        
     }
 }
