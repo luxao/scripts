@@ -261,14 +261,15 @@ else {
         })
             .done(function (page) {
                 $("#" + rowNumber).remove();
-                let newWindow = window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
+                sessionStorage.setItem("shouldAttack", "true");
+                // let newWindow = window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
+                window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
 
-                $(newWindow).on('load', function () {
-                    sessionStorage.setItem("shouldAttack", "true");
-                    document.forms[0].ram.value = 1;
-                    document.forms[0].light.value = 20;
-                    $("#target_attack").click();
-                });
+                // $(newWindow).on('load', function () {
+                //     document.forms[0].ram.value = 1;
+                //     document.forms[0].light.value = 20;
+                //     $("#target_attack").click();
+                // });
             });
 
         
@@ -280,8 +281,9 @@ else {
     }
 
     if (sessionStorage.getItem("shouldAttack") === "true") {
-        attack();
+        console.log("LOAD UNITS NOW")
+        // attack();
 
-        sessionStorage.removeItem("shouldAttack");
+        // sessionStorage.removeItem("shouldAttack");
     }
 }
