@@ -261,7 +261,7 @@ else {
         })
             .done(function (page) {
                 $("#" + rowNumber).remove();
-                sessionStorage.setItem("shouldAttack", "true");
+                // sessionStorage.setItem("shouldAttack", "true");
                 // let newWindow = window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
                 console.log(temp)
                 window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
@@ -278,16 +278,16 @@ else {
 
     //TODO: &ram=1 or &catapult=1
     
-    function attack() {
-        // $("#troop_confirm_submit").click();
-        console.log("ATTACK")
+    // function attack() {
+    //     // $("#troop_confirm_submit").click();
+    //     console.log("ATTACK")
 
-        sessionStorage.removeItem("shouldAttack");
-    }
+    //     sessionStorage.removeItem("shouldAttack");
+    // }
 
-    if (sessionStorage.getItem("shouldAttack") === "true") {
-        console.log("LOAD UNITS NOW")
-        attack();
+    // if (sessionStorage.getItem("shouldAttack") === "true") {
+    //     console.log("LOAD UNITS NOW")
+    //     attack();
         
-    }
+    // }
 }
