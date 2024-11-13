@@ -134,12 +134,12 @@ else {
                                     </table>
                                 </div>`
         );
-        // for (let i = 0; i < game_data.units.length; i++) {
-        //     if (game_data.units[i] != "militia") {
-        //         $("#unitRowNames").append(`<td style="text-align:center; width:35px; background-color:${backgroundColor}; padding:5px;"><img src="/graphic/unit/unit_${game_data.units[i]}.png" title="${game_data.units[i]}" alt="" class=""></td>`)
-        //         $("#unitRow").append(`<td style="text-align:center; width:35px; background-color:${backgroundColor}; padding:5px;"><input type="radio" ID="${game_data.units[i]}" name="units"></td>`)
-        //     }
-        // }
+        for (let i = 0; i < game_data.units.length; i++) {
+            if (game_data.units[i] != "militia") {
+                $("#unitRowNames").append(`<td style="text-align:center; width:35px; background-color:${backgroundColor}; padding:5px;"><img src="/graphic/unit/unit_${game_data.units[i]}.png" title="${game_data.units[i]}" alt="" class=""></td>`)
+                $("#unitRow").append(`<td style="text-align:center; width:35px; background-color:${backgroundColor}; padding:5px;"><input type="radio" ID="${game_data.units[i]}" name="units"></td>`)
+            }
+        }
 
     }
 
