@@ -263,6 +263,7 @@ else {
                 $("#" + rowNumber).remove();
                 sessionStorage.setItem("shouldAttack", "true");
                 // let newWindow = window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
+                console.log(temp)
                 window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
 
                 // $(newWindow).on('load', function () {
@@ -275,11 +276,12 @@ else {
         
     }
 
+    //TODO: &ram=1 or &catapult=1
     
     function attack() {
         // $("#troop_confirm_submit").click();
         console.log("ATTACK")
-        
+
         sessionStorage.removeItem("shouldAttack");
     }
 
