@@ -272,12 +272,13 @@ else {
     // https://sk90.divoke-kmene.sk/game.php?village=4430&screen=place&try=confirm -- POST
     //     $.post("demo.asp",      // send HTTP POST request to a page and get the answer
     // {
-    // name: "John",       // send data
+    // name: "John",       
     // age: 30
     // },
     // function(data, status){ //retreive response
     // console.log("Data: " + data + "\nStatus: " + status);
     // });
+    
     // function attack() {
     //     // $("#troop_confirm_submit").click();
     //     console.log("ATTACK")
