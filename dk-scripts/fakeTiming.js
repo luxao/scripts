@@ -290,6 +290,27 @@ else {
 
     //TODO: &ram=1 or &catapult=1 skontroluj či to môžem rovno reloadnut na odoslanie uz vyplnené a potom len submit btn to send ak by to išlo
     // https://sk90.divoke-kmene.sk/game.php?village=4430&screen=place&try=confirm -- POST
+    // https://sk90.divoke-kmene.sk/game.php?village=4469&screen=place&action=command
+    
+    // af7e9fdea2e2c759fc94fd: 077524fcaf7e9f
+    // template_id: 
+    // source_village: 5046
+    // spear: 3060
+    // sword: 3609
+    // axe: 
+    // spy: 200
+    // light: 
+    // heavy: 
+    // ram: 
+    // catapult: 200
+    // knight: 
+    // snob: 
+    // x: 487
+    // y: 431
+    // target_type: coord
+    // input: 
+    // attack: Útok
+
     //     $.post("demo.asp",      // send HTTP POST request to a page and get the answer
     // {
     // name: "John",       
