@@ -134,13 +134,6 @@ else {
                                     </table>
                                 </div>`
         );
-        // for (let i = 0; i < game_data.units.length; i++) {
-        //     if (game_data.units[i] != "militia") {
-        //         $("#unitRowNames").append(`<td style="text-align:center; width:35px; background-color:${backgroundColor}; padding:5px;"><img src="/graphic/unit/unit_${game_data.units[i]}.png" title="${game_data.units[i]}" alt="" class=""></td>`)
-        //         $("#unitRow").append(`<td style="text-align:center; width:35px; background-color:${backgroundColor}; padding:5px;"><input type="radio" ID="${game_data.units[i]}" name="units"></td>`)
-        //     }
-        // }
-
     }
 
     function calculateTimedAttacks() {
@@ -263,7 +256,6 @@ else {
                 $("#" + rowNumber).remove();
                 // sessionStorage.setItem("shouldAttack", "true");
                 // let newWindow = window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
-                console.log(temp)
                 window.open("/game.php?village=" + sourceID + "&screen=place&target=" + temp.villages[0].id);
 
                 // $(newWindow).on('load', function () {
@@ -276,7 +268,7 @@ else {
         
     }
 
-    //TODO: &ram=1 or &catapult=1
+    //TODO: &ram=1 or &catapult=1 skontroluj či to môžem rovno reloadnut na odoslanie uz vyplnené a potom len submit btn to send ak by to išlo
     
     // function attack() {
     //     // $("#troop_confirm_submit").click();
